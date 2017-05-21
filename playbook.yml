@@ -1,0 +1,13 @@
+- hosts: all
+  become: yes
+  become_user: root
+  gather_facts: no
+ 
+  tasks:
+    - name: install python-simplejson
+      raw: apt-get install -y python-simplejson
+    - name: install bind
+      apt: name={{item}} state=present update_cache=yes
+      with_items:
+        - bind9
+        - bind9utils
