@@ -1,0 +1,15 @@
+$TTL 3650
+@	IN	SOA	rpi-b.tsystem-w.gr.jp.	root.tsystem-w.gr.jp.  (
+				2016123101	; serial
+				3600		; refresh
+				300		; retry
+				3600000		; expire
+				3600		; minimum
+)
+	IN	NS	rpi-bp.tsystem-w.gr.jp.
+80	IN	PTR	centos-rpi3-0.tsystem-w.gr.jp.
+81	IN	PTR	centos-rpi3-1.tsystem-w.gr.jp.
+85	IN	PTR	rpi2.tsystem-w.gr.jp.
+160	IN	PTR	r60e.tsystem-w.gr.jp.
+170	IN	PTR	rpi-b.tsystem-w.gr.jp.
+254	IN	PTR	ns.tsystem-w.gr.jp.

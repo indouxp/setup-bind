@@ -1,0 +1,16 @@
+$TTL 3600
+@	IN	SOA	rpi-b.tsystem-w.gr.jp.	root.tsystem-w.gr.jp.	(
+				2016123101	; serial
+				3600		; refresh
+				300		; retry
+				3600000		; expire
+				3600		; minimum
+)
+		IN	NS	rpi-bp.tsystem-w.gr.jp.
+ns		IN	A	192.168.11.254
+centos-rpi3-0	IN	A	192.168.11.80
+centos-rpi3-1	IN	A	192.168.11.81
+rpi2		IN	A	192.168.11.85
+r60e		IN	A	192.168.11.160
+rpi-b		IN	A	192.168.11.170
+rpi-bp		IN	A	192.168.11.254
