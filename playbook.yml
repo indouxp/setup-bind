@@ -11,3 +11,11 @@
       with_items:
         - bind9
         - bind9utils
+    - name: copy files
+      copy: src=./files/etc/bind/named.conf               dest=/etc/bind owner=root group=root mode=0644 backup=yes
+      copy: src=./files/etc/bind/named.conf.default-zones dest=/etc/bind owner=root group=root mode=0644 backup=yesest=/etc/bind owner=root group=root mode=0644 backup=yes
+      copy: src=./files/etc/bind/named.conf.options       dest=/etc/bind owner=root group=root mode=0644 backup=yesest=/etc/bind owner=root group=root mode=0644 backup=yes
+      copy: src=./files/etc/bind/tsystem-w.rev            dest=/etc/bind owner=root group=root mode=0644 backup=yesest=/etc/bind owner=root group=root mode=0644 backup=yes
+      copy: src=./files/etc/bind/tsystem-w.zone           dest=/etc/bind owner=root group=root mode=0644 backup=yesest=/etc/bind owner=root group=root mode=0644 backup=yes
+      copy: src=./files/etc/bind/tsystem.rev              dest=/etc/bind owner=root group=root mode=0644 backup=yesest=/etc/bind owner=root group=root mode=0644 backup=yes
+      copy: src=./files/etc/bind/tsystem.zone             dest=/etc/bind owner=root group=root mode=0644 backup=yesest=/etc/bind owner=root group=root mode=0644 backup=yes
